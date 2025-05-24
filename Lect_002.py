@@ -1,31 +1,27 @@
-''' Topic hai
-str()
-int()
-float()
-
+'''
+Data Types:
+  -> str()
+  -> int()
+  -> float()
+  -> bool()
 '''
 
-var1 = "Hello World !!" # String Variable jo double quote ke andar hai wo hamesa string hi rhta hai
-var2 = "4"              # Integer Variable
-var3 = 38.2             # Float Variable
-var4 = "Singhal"        # String Variable
-var5 = "10"             # Integer Variable
+var1 = "Hiiee Guyzz !!" # String Variable 
+var2 = 7                # Integer Variable
+var3 = 3.14             # Float Variable
+var4 = "Vighnesh"       # String Variable
+var5 = 10               # Integer Variable
 
 
-print(var1)           #ye print kr dega hello world ko 
-print(type(var1))     #ye print hello world ko nhi karega balki uska type batayega means string
-print(var1 + var2)    #ye to bs dono ko direct print kr dega ( hello world 4)
-print(var1 + var4)    #same kahani 
-#print(var2 + var3) #Run nhi hoha kyuki hm ek string aur ek float ko add krna cha rhe hai. agla line run karega.
-print(int(var2) + var3)
+print(var1)           # This will print Hiiee Guyzz !!
+print(type(var1))     # This will print TYPE of the variable, i.e; string
+print(var1 + str(var2))    # This will print Hiiee Guyzz !!7. Here, var2 is integer variable. To add to a string variable you should TYPECASTE.
 
-# print(var2+var5) 
-# now it is concatenating matlab error show kr dega bhai kyu kyuki maschine usko int ke form me nhi le rha. to usko int banao bhai.
-# now  agla line kro run karega try kro 
+# ***TYPECASTING*** : Type Casting is converting the type of variable from one data type to other to perform concatenation.
 
-print(int(var2) + int(var5)) # Type casting example. Ye run karega.
-
-
+print(var1 + var4)    # This wil print Hiiee Guyzz !!Vighnesh 
+print(var2 + var3)    # This will print 10.14
+print(var4 + str(var5)) # Another type casting example
 
 
 print(10 * "Hello World !!!\n")             # Iske through hello world 10 times print hoga
