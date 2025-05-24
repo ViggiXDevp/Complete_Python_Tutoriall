@@ -1,54 +1,52 @@
-# Lists aur Lists ke Function ko Samjhte hai.
+# =========== Lists & it's functions ==========
 
-laptop = ["ram", "battery", "hdd", "led", "wifi", "mouse", 227]
+mylist = ["Ironman", "Thor", "Captain America", "Hulk", "Black Widow", "Hawkeye", 3000]
 
-print(laptop[5]) # lists ke 5 yani 6 positiosn wala str. print karega.
+print(mylist[5])           # Prints the content present at index 5 i.e; "Hawkeye"
 
-numbers = [2, 8, 9, 11, 67, 7]
+numbers = [2, 8, 9, 11, 69, 7]
 
-print(numbers[4]) # lists ke 4 yani 5 positiosn wala int. print karega.
-print(numbers[1:4]) # print karega lists ke andar wale integer ko jo 1 se 4 tk ho yani 1 wale 2 wale aur 3 wale tak bs.
+print(numbers[4])          # Prints the content present at index 4 i.e; 69
+print(numbers[1:4])        # Prints the contents of list from index 1 and goes upto index 3...(index 4 not counts)
 
-# lists ka Max and Min kaise nikale.
-print(max(numbers)) # lists ke maximum value wale ke no. ko print karega.
-print(min(numbers)) # lists ke minimum value wale ke no. ko print karega.
+# Maximum and Minimum values of List
+print(max(numbers))        # Prints the maximum value of the list
+print(min(numbers))        # Prints the minimum value of the list
 
-
-# lists ka Alat palat ka kaam kaise kare me.
-numbers.sort() # sort() fn. ka use lists ke no. ko accending order me daalne ke liye.
+# Functions to arrange the contents of the list
+numbers.sort()             # The sort function is used to arrange the list elements in ascending order
 print(numbers)
-numbers.reverse()  # reverse() fn same hai sort() ka bs list ko palat deta hai.
-print(numbers)
-
-
-#Numbers ko add kaise kare lists me.
-numbers.append('10')           #append() ka use kiye kisi bhi no. ya string ko add krne ke liye.
-numbers.append('singhal')
-numbers.append('1987')
+numbers.reverse()          # The reverse function is used to reverse the elements of the list
 print(numbers)
 
 
-#lists me index ke hisab se no. ko replace kaise kare.
-numbers.insert(1, 54) # list.insert(index no. , change kya krna hai) use hota hai index by replace property ke liye.
+# Function to add numbers in the list
+numbers.append(7)          # The append function is used to add any string or other data type in the list
+numbers.append('vighnesh')
+numbers.append('1995')
+print(numbers)
+
+
+# Function to add element at specified index
+numbers.insert(1, 54)      # list.insert(index no , element) Adding element at given index
 numbers.insert(2, 74)
 numbers.insert(3, 78)
 print(numbers)
 
 
-#lists me no. ko delete kaise kare.
-numbers.pop(1)    #matlab index 1 wala No. delete hoga lists me se.
+# Function to delete element at given index
+numbers.pop(3)             # Removes element at index 3
 print(numbers)
 
 
-#Tuples ka use kaise hota hai!!!
-numbers[1] = 227 #tuples basically replacement ka kaam krta hai bs number[index No.] = any No. and yupp you got your new lists.
+numbers[1] = 227           # Updates the value at index 1 by 227. Because, Lists are mutable (changeable)
 print(numbers)
 
-Singhal = (1, 2, 3)
-print(type(Singhal))
-print(Singhal)
+tuple = (1, 2, 3)
+print(type(tuple))         # Tuples are immutable
+print(tuple)
 
-# Number Swwapping kaise krte hai.
+# Swapping of two numbers
 a = 1
 b = 2
 a, b = b, a
