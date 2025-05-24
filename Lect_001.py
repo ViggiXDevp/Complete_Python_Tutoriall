@@ -1,28 +1,26 @@
-# First tutorial
-# Comments, Escape Sequence and Print Statements.
+# === Comments, Escape Sequence and Print Statements ===
 
 # This is first comment example.
-print("Hello World !!!!")
+print("Hello Guyzz!!!")  # print statement is used to print the content present in between " ". Anything which is present in between " " is a string.
 
 '''
 Multi line comment example. 
 With triple qoute we can comment multiple lines.
 '''
 
-# end is merging last print line.
-print("This is first print.", end="")
-print("This is second print.")
+# By using end="", it overrides the \n function. So the second line will get printed in the first itself.
+print("This is first line.", end="")
+print("This is second line.")
 
-# end with space.
-print("This is first print.", end=" ")
-print("This is second print.")
+# Here also, second line gets printed in the first but with a space between both lines because, end=" " considered as space between those lines
+print("This is first line.", end=" ")
+print("This is second line.")
 
-#end with comma
-print("This is first print", end=",")
-print("This is second print.")
+# Here, first line ends with a comma
+print("This is first line", end=",")
+print("This is second line.")
 
-# agar end=" " istemaal kiye to use line me likha jaega 
 
 # Now Singhal ab new line me print hoga.
-print("hello i will write my name in the next sequance \nSinghalpuri07")
-print("hii")
+print("Hello I will print my name in the next line using escape sequence \nVighnesh Reddy")
+print("Thank you...")
