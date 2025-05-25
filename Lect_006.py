@@ -1,42 +1,44 @@
-# set function ka Use !!!  
+# ========= Sets =========
 '''
-   1)sets me kaise bhi no. ko likh print me wo sahi kr dega aacendinge order me.
-   2) koi bhi duplicate no. pr error show kr dega.
+   *** Points to Ponder ***
+   1) When you print a set, it will arrange itself in an ascending order.
+   2) Only unique values will be printed in the set even if there are duplicates in the input.
 '''
 
-s1 = set([10,8,3,4,5,6,7,9,1,2,"Singhal"])    
+s1 = set([10,8,3,4,5,6,7,9,1,2,"Vighnesh"])    
 s2 = set([10,200,300])
 s3 = {5,4,6,7,8}
-s4 = {1,2,3,4,5}         # Sets likhne ka dusra trika.
-print(s1)                # Mera set1 ko print kr dega.
-print(s2)                # Mera set2 ko print kr dega.
-print(s3)                # Mera set3 ko print kr dega.     
-print(type(s1))          # Mere set1 ka type print karega jo ki set hai.
-print(len(s1))           # Mere Set1 me kitna elements hai wo likh dega.
+s4 = {1,2,3,4,5}         # Another way to represent sets
+print(s1)                # Prints set s1
+print(s2)                # Prints set s2
+print(s3)                # Prints set s3     
+print(type(s1))          # Prints type of set s1
+print(len(s1))           # Prints length of set s1
 
-# Elements remove kaise kare.
-s1.remove("Singhal")
+# Removing elements from a given set
+s1.remove("Vighnesh")
 print(s1)          
 
-# Elements add kaise kare.
+# Adding elements to a given set
 s1.add(11)
 print(s1)
 
-# Elements ko ek baar me clear kaise kare.
+# Deleting the entire set
 s1.clear()
 print(s1)
 
-'''union aur intersection function s3 aur s4 ke liye hi kaam karega 
-   s1 aur s2 ke liye nhi karega kyuki wo old version ka typing hai'''
-
-# Elemnts ka Union lete hai.
+# Taking Union of two sets
 s5 = s4.union(s3)
-print(s4)
+print(s5)
 
-# Elements ka intersection lete hai.
+s5 = s3 | s4  # Another way for Union
+print(s5)
+
+# Taking Intersection of two sets
 s6 = s3.intersection(s4)
 print(s6)
 
-s6 = s3 | s4
+s6 = s3 & s4  # Another way for Intersection
 print(s6)
+
 
